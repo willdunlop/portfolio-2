@@ -1,0 +1,160 @@
+.window {
+    min-width: 15em;
+    min-height: 6em;
+    width: 25em;
+    height: 25em;
+    position: absolute;
+    z-index: $zWindow;
+    box-shadow: .4em .6em .5em rgba($black, 0.5);;
+
+    display: flex;
+    flex-direction: column;
+    border: ridge .4em var(--color-inactive);
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    outline: none;
+    animation-duration: 0.5s;
+
+    &:focus, &:focus-within {
+        z-index: $zWindowFocus;
+        // --color-var: #ffffff;
+        border: ridge .4em var(--color-primary);
+    
+    
+        .window__header-btn, .window__header-title { 
+            background-color: var(--color-primary);
+            // border-top: solid .1em $periwinkle-grey;
+            // border-left: solid .1em $periwinkle-grey;
+            // border-bottom: solid .1em $martinique;
+            // border-right:solid .1em $martinique;
+    
+            border-top: solid .1em var(--color-primary-light);
+            border-left: solid .1em var(--color-primary-light);
+            border-bottom: solid .1em var(--color-primary-dark);
+            border-right:solid .1em var(--color-primary-dark);
+    
+    
+            &:active {
+                // border-top-color: $martinique;
+                // border-left-color: $martinique;
+                // border-bottom-color: $periwinkle-grey;
+                // border-right-color: $periwinkle-grey;
+    
+                border-top-color: var(--color-primary-dark);
+                border-left-color: var(--color-primary-dark);
+                border-bottom-color: var(--color-primary-light);
+                border-right-color:var(--color-primary-light);
+        
+            }
+        
+        }
+    
+    }
+
+
+    @include media(to tablet) {
+        width: 15em;
+        height: 15em;
+        font-size: .75em;
+    }
+}
+
+.window__header {
+    display: flex;
+    min-height: 2em;
+
+}
+
+// .window__header-title, .window__header-btn { transition: background-color .25s linear; }
+
+.window__header-btn {
+    width: 2em;
+    height: 2em;
+    background: var(--color-inactive);
+
+
+    border: .1em solid;
+    border-top-color: var(--color-inactive-light);
+    border-left-color: var(--color-inactive-light);
+    border-bottom-color: var(--color-inactive-dark);
+    border-right-color: var(--color-inactive-dark);
+    outline: none;
+}
+
+.window__header-title {
+    width: 100%;
+    height: 2em;
+    padding: .1em .25em;
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+    background: var(--color-inactive);
+    border: solid .1em;
+    border-top-color: var(--color-inactive-light);
+    border-left-color: var(--color-inactive-light);
+    border-bottom-color: var(--color-inactive-dark);
+    border-right-color: var(--color-inactive-dark);
+}
+
+
+.window__body {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-grow: 1;
+    // overflow: auto;
+    overflow: hidden;
+    background-color: $black;
+}
+
+.window__body-container {
+    width: 100%;
+    height: 100%;
+    flex-grow: 1;
+}
+
+.window__minimise {
+    display: none;
+}
+
+.window__focus {
+    z-index: $zWindowFocus;
+    // --color-var: #ffffff;
+    border: ridge .4em var(--color-primary);
+
+
+    .window__header-btn, .window__header-title { 
+        background: var(--color-primary);
+        // border-top: solid .1em $periwinkle-grey;
+        // border-left: solid .1em $periwinkle-grey;
+        // border-bottom: solid .1em $martinique;
+        // border-right:solid .1em $martinique;
+
+        border-top: solid .1em var(--color-primary-light);
+        border-left: solid .1em var(--color-primary-light);
+        border-bottom: solid .1em var(--color-primary-dark);
+        border-right:solid .1em var(--color-primary-dark);
+
+
+        &:active {
+            // border-top-color: $martinique;
+            // border-left-color: $martinique;
+            // border-bottom-color: $periwinkle-grey;
+            // border-right-color: $periwinkle-grey;
+
+            border-top-color: var(--color-primary-dark);
+            border-left-color: var(--color-primary-dark);
+            border-bottom-color: var(--color-primary-light);
+            border-right-color:var(--color-primary-light);
+    
+        }
+    
+    }
+}
+  

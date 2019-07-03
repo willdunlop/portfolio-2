@@ -1,0 +1,34 @@
+.iframe-comp {
+    width: 100%;
+    height: 100%;
+}
+
+.iframe-comp__site-link {
+    text-align: center;
+    width: 100%;
+    display: block;
+    cursor: pointer;
+    color: var(--color-font-primary);
+    background-color: var(--color-secondary);
+    border: solid .05em var(--color-secondary);
+    border-top-color: var(--color-secondary-light);
+    border-left-color:var(--color-secondary-light);
+    border-bottom-color: var(--color-secondary-dark);
+    border-right-color: var(--color-secondary-dark);
+
+
+    &:active {
+        border-top-color: var(--color-secondary-dark);
+        border-left-color: var(--color-secondary-dark);
+        border-bottom-color:var(--color-secondary-light);
+        border-right-color:var(--color-secondary-light);
+    
+    }
+
+}
+
+.iframe-comp__iframe {
+    width: 100%;
+    height: 100%;
+    background: white;
+}

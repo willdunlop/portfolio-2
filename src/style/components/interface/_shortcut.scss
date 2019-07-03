@@ -1,0 +1,40 @@
+.shortcut {
+    width: 5em;
+    // padding: .25em .5em;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    outline: none;
+    // outline-color: var(--color-shortcut);
+
+    &:focus {
+        .shortcut__icon {
+            color: var(--color-shortcut);
+        }
+        .shortcut__title {
+            background: var(--color-shortcut);
+            max-height: none;
+            outline: dotted .1em var(--color-shortcut-outline);
+        }
+    }
+}
+
+.shortcut__icon {
+    height: 3em;
+    width: 2em;
+    margin: 0 auto;
+    padding: .5em 0;
+}
+
+.shortcut__title {
+    font-size: .8em;
+    padding: .5em 0;
+    // margin-top: .5em;
+    text-align: center;
+    max-height: 3.25em;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+    
+}

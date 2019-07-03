@@ -1,0 +1,47 @@
+.startmenu {
+    // min-height: 10em;
+    min-width: 10em;
+    position: absolute;
+    color: $black;
+    bottom: 2em;
+    display: none;
+    z-index: $zStartMenu;
+    padding: .1em .25em;
+    cursor: pointer;
+
+
+    border: 2px solid;
+    border-bottom-color: $emperor;
+    border-right-color: $emperor;
+    border-left-color: $alto;
+    border-top-color: $alto;
+    background-color: $silver;
+}
+
+
+.startmenu__item {
+    padding: .25em .1em;
+    margin-bottom: .15em;
+
+    &:hover {
+        background-color: $navy-blue;
+        color: $silver;
+    }
+
+    img {
+        width: 1.5em;
+        height: 1.5em;
+    }
+}
+
+.startmenu__item-title {
+    margin-left: .5em;
+}
+
+.startmenu__divider {
+    width: 100%;
+    margin-bottom: .15em;
+    border: 1px solid;
+    border-bottom-color: $alto;
+    border-top-color: $emperor;
+}

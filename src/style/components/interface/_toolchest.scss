@@ -1,0 +1,94 @@
+.toolchest {
+    position: absolute;
+    top: 8em;
+    left: 1em;
+    outline: none;
+
+    display:flex;
+    flex-direction: column;
+    box-shadow: .2em .4em .5em rgba($black, 0.5);;
+
+    animation-duration: 0.5s;
+}
+
+.toolchest__header {
+    font-size: .75em;
+    width: 100%;
+    padding: .1em .25em;
+    background: var(--color-primary);
+    padding: 0 .75em;
+    border: solid .05em var(--color-primary);
+    border-top-color: var(--color-primary-light);
+    border-left-color: var(--color-primary-light);
+    border-bottom-color: var(--color-primary-dark);
+    border-right-color: var(--color-primary-dark);
+
+    -webkit-user-select: none; /* Safari */        
+    -moz-user-select: none; /* Firefox */
+    -ms-user-select: none; /* IE10+/Edge */
+    user-select: none; /* Standard */
+
+    &:active {
+        border-top-color: var(--color-primary-dark);
+        border-left-color: var(--color-primary-dark);
+        border-bottom-color: var(--color-primary-light);
+        border-right-color: var(--color-primary-light);
+    
+    }
+
+}
+
+.toolchest__btn {
+    font-size: .75em;
+    width: 100%;
+    padding: .1em .25em;
+    background: var(--color-secondary);
+    outline: none;
+
+    background-color: var(--color-secondary);
+    border: solid .05em var(--color-secondary);
+    border-top-color: var(--color-secondary-light);
+    border-left-color:var(--color-secondary-light);
+    border-bottom-color: var(--color-secondary-dark);
+    border-right-color: var(--color-secondary-dark);
+
+
+    &:active {
+        border-top-color: var(--color-secondary-dark);
+        border-left-color: var(--color-secondary-dark);
+        border-bottom-color:var(--color-secondary-light);
+        border-right-color:var(--color-secondary-light);
+    
+    }
+}
+
+.toolchest__menu {
+    position: absolute;
+    display: none;
+    // top: 25%;
+    // left: 25%;
+    font-size: .75em;
+    color: var(--color-font-secondary);
+
+    overflow-x: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+
+
+    background-color: var(--color-menu);
+    border: solid .05em var(--color-menu);
+    border-top-color: var(--color-menu-light);
+    border-left-color: var(--color-menu-light);
+    border-bottom-color: var(--color-menu-dark);
+    border-right-color: var(--color-menu-dark);
+}
+
+.toolchest__menu-item {
+    padding: .1em .5em;
+    width: auto;
+
+    &:hover {
+        background: var(--color-primary);
+        color: var(--color-font-primary);
+    }
+}

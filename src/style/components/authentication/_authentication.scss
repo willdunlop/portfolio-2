@@ -1,0 +1,50 @@
+
+.authentication__users {
+    display: flex;
+    padding: 1em 2em;
+    overflow-y: auto;
+}
+
+
+.authentication__user {
+    outline: none;
+    margin: 0 1em;
+
+    &:first-of-type {
+        margin-left: 0;
+    }
+
+    &:last-of-type {
+        margin-right: 0;
+    }
+
+
+    &:focus {
+
+        .authentication__user-name {
+            color: var(--color-font-primary);
+            background: var(--color-menu-dark);
+            outline: dotted .1em var(--color-shortcut-outline);
+        }
+    }
+}
+
+.authentication__user-icon {
+    width: 3em;
+    margin-bottom: .25em;
+}
+
+.authentication__user-name {
+    
+}
+
+.authentication__form {
+    padding: 2em 3em;
+}
+
+.authentication__input-label {
+    width: 6em;
+    padding: 0 .5em;
+    text-align: right;
+}
+

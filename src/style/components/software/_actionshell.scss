@@ -1,0 +1,113 @@
+.actionshell {
+    width: 100%;
+    min-height: 100%;
+    font-family: "Perfect DOS", sans-serif;
+    font-style: normal;
+}
+
+.actionshell__header {
+    background: red;
+    color: yellow;
+    width: 100%;
+    padding: 3px 0 5px;
+    text-align: center;
+    position: fixed;
+}
+
+.actionshell__body {
+    display: flex;
+    height: 100%;
+    padding-top: 2em;
+}
+
+.actionshell__panel {
+    min-height: 100%;
+    width: 3.5em;
+    background: yellow;
+    color: red;
+}
+
+.actionshell__cli-panel-message {
+    font-size: 2em;
+    margin: 0 auto;
+    width: 1em;
+    li {
+        text-align: center
+    }
+}
+
+.actionshell__cli {
+    width: 100%;
+    min-height: 100%;
+    padding: .25em .5em;
+    overflow: auto;
+
+}
+
+.actionshell__cli-output {
+
+}
+
+.actionshell__cli-output-line {
+    display: flex;
+    flex-direction: column;
+}
+
+.actionshell__cli-output-repeater {
+    display: flex;
+}
+
+.actionshell__cli-output-line-response {
+    padding-left: 1em;
+}
+
+.actionshell__cli-output-line-response-error {
+}
+
+.actionshell__cli-prefix {
+    color: red;
+    margin-right: .5em;
+}
+
+.actionshell__cli-input {
+    width: 100%;
+    display: flex;
+    &:after {
+        content: '';
+        display: inline-block;
+        width: .75em;
+        height: 1.25em;
+        background: red;
+        animation: cursorblink 1s infinite;
+    }
+}
+
+.actionshell__cli-input-text {
+    // width: 100%;
+    background: black;
+    // border: none;
+    outline: none;
+    position: fixed;
+    top: 0;
+    z-index: -1;
+    // visibility: hidden;
+}
+
+.actionshell__cli-input-display {
+    color: white;
+}
+
+/** Colors **/
+.as__red { color: red; }
+.as__yellow { color: yellow; }
+.as__grey { color: grey }
+.as__lightpurple { color: plum  }
+
+/** ANIMATIONS **/
+@keyframes cursorblink {
+    from {
+        opacity: 0
+    } to {
+        opacity: 1;
+    }
+}

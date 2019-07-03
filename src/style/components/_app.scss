@@ -1,0 +1,40 @@
+
+.app {
+
+}
+
+.app__desktop {
+    // overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+
+    // background-image: url('/assets/images/9xClouds-O.png');
+    background: #ffdddd; /* Old browsers */
+    background: -moz-linear-gradient(top,  #ffdddd 0%, #57088c 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  #ffdddd 0%,#57088c 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  #ffdddd 0%,#57088c 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffdddd', endColorstr='#57088c',GradientType=0 ); /* IE6-9 */
+
+}
+
+.container {
+    position: absolute;
+}
+
+.show { display: block }
+
+.hide { display: none }
+
+
+.basic {
+    padding: .5em 1em;
+    width: 100%;
+    background: var(--color-secondary);
+    // color: var(--color-font-secondary);
+    border: solid .1em;
+    border-top-color: var(--color-secondary-light);
+    border-left-color: var(--color-secondary-light);
+    border-bottom-color: var(--color-secondary-dark);
+    border-right-color: var(--color-secondary-dark);
+    overflow-y: auto;
+}

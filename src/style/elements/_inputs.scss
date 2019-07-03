@@ -1,0 +1,23 @@
+
+.text-input {
+    // color: var(--color-font-primary);
+    background-color: var(--color-highlight);
+    outline-color: var(--color-primary);
+    width: 100%;
+    max-width: 30em;
+
+    border: solid .15em;
+    border-top-color: var(--color-highlight-dark);
+    border-left-color: var(--color-highlight-dark);
+    border-bottom-color: var(--color-highlight-light);
+    border-right-color: var(--color-highlight-light);
+
+    padding: .1em .25em;
+
+}
+
+.label {
+    width: 6em;
+    padding: 0 .5em;
+    text-align: right;
+}

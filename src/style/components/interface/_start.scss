@@ -1,0 +1,112 @@
+.start {
+    // position: fixed;
+    z-index: $zStart;
+    width: 100vw;
+    bottom: 0;
+    height: 2.2em;
+    padding: .1em 0;
+    display: flex;
+    transform: translateY(-2.2em);
+
+    border: 2px solid;
+    border-bottom-color: $silver;
+    border-right-color: $silver;
+    border-left-color: $silver;
+
+    border-top-color: $alto;
+    background-color: $silver;
+    color: $black;
+}
+
+.start__button {
+    padding: .1em .5em;
+    background-color: $silver;
+    width: 5em;
+    display: flex;
+    align-items: center;
+
+    border: 2px solid;
+    border-bottom-color: $emperor;
+    border-right-color: $emperor;
+    border-left-color: $alto;
+    border-top-color: $alto;
+
+    img {
+        height: 1em;
+        width: 1em;
+    }
+
+    &:active {
+        border-bottom-color: $alto;
+        border-right-color: $alto;
+        border-left-color: $emperor;
+        border-top-color: $emperor;
+    
+    }
+}
+
+.start__button-start {
+    margin-left: auto;
+}
+
+
+
+.start__system-tray {
+    display: flex;
+    margin-left: auto;
+    padding: 0 .1em;
+
+    border: 2px solid;
+    border-bottom-color: $alto;
+    border-right-color: $alto;
+    border-left-color: $emperor;
+    border-top-color: $emperor;
+
+}
+
+.start__window-tray {
+    padding: 0 .25em;
+    display: flex;
+}
+
+.start__tray-item {
+    display: flex;
+    padding: .1em .5em;
+    margin: 0 .1em;
+
+    border: 2px solid;
+    border-bottom-color: $emperor;
+    border-right-color: $emperor;
+    border-left-color: $alto;
+    border-top-color: $alto;
+
+    &:focus {
+        border-bottom-color: $alto;
+        border-right-color: $alto;
+        border-left-color: $emperor;
+        border-top-color: $emperor;    
+    }
+}
+
+// Make this a proper modifier when you figure it out
+// .start__tray-item--focus {
+//     border-bottom-color: $alto;
+//     border-right-color: $alto;
+//     border-left-color: $emperor;
+//     border-top-color: $emperor;
+
+// }
+
+.start__tray-item-icon {
+    width: 1.25em;
+    height: 1.25em;
+    margin-right: .25em;
+}
+
+.start__tray-item-title {
+
+}
+
+.start__system-time {
+    // margin-left: auto;
+}

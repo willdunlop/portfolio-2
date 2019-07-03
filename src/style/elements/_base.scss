@@ -1,0 +1,20 @@
+html {
+  // This mixin handles global font-size, let it do its thing
+  @include responsive-type(font-size, 320px, 1366px, 20px, 16px);
+  color: var(--color-font-primary);
+  font-family: 'Hello World', sans-serif;
+  font-weight: 200;
+  font-style: italic;
+  line-height: 1.375;
+  cursor: $mainCursor, auto;
+  overflow-x: hidden;
+
+}
+
+body {
+  // min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  touch-action: none;
+}
+

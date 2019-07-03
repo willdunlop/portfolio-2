@@ -1,0 +1,30 @@
+// Unquoted CSS font family name validator
+// https://mothereff.in/font-family
+
+@font-face {
+    font-family: "Arcade Alternate";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/ArcadeAlternate.ttf");
+}
+
+@font-face {
+    font-family: "8-Bit Dragon";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/eight-bit-dragon.otf");
+}
+
+@font-face {
+    font-family: "Hello World";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/hello-world.ttf");
+}
+
+@font-face {
+    font-family: "Perfect DOS";
+    font-style: normal;
+    font-weight: 400;
+    src: url("/assets/fonts/Perfect-DOS-VGA-437.ttf");
+}

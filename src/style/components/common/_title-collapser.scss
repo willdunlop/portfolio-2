@@ -1,0 +1,33 @@
+.title-collapser {
+    display: flex;
+    width: 100%;
+}
+
+.title-collapser__title {
+    width: 100%;
+    display: flex;
+
+    &:after {
+        content: '';
+        display: block;
+        position: relative;
+        // transform: translateY(.5em);
+        margin: .5em;
+        margin-top: .75em;
+        width: 100%;
+        height: 1px;
+        background-color: var(--color-font-secondary);
+    }
+
+}
+
+// .appearance__settings-viewer-line {
+//     width: 100%;
+// }
+
+
+.title-collapser__toggle {
+    justify-content: flex-end;
+    // margin-left: auto;
+    
+}

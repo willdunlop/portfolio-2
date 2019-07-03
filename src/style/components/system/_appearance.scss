@@ -1,0 +1,173 @@
+.appearance { 
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    // font-size: .9em;
+    color: var(--color-font-secondary);
+
+    @include media(from tablet) {
+        flex-direction: row;
+    }
+}
+
+.appearance__theme-selector {
+    // max-width: 8em;
+    background: var(--color-menu);
+    color: var(--color-font-secondary);
+
+    border: solid .15em;
+    border-top-color: var(--color-menu-dark);
+    border-left-color: var(--color-menu-dark);
+    border-bottom-color: var(--color-menu-light);
+    border-right-color: var(--color-menu-light);
+
+    @include media(from tablet) {
+        height: 100%;
+        background: var(--color-menu);
+
+    }
+
+}
+
+.appearance__settings-preview {
+    border: solid red;
+    height: 50px;
+}
+
+.appearance__theme-list-item {
+    outline: none;
+    padding: 0 1em 0 .5em;
+
+
+    &:focus {
+        color: var(--color-font-primary);
+        background: var(--color-primary);
+    }
+}
+
+
+.appearance__settings {
+    width: 100%;
+    @include media(from tablet) {
+        padding: 0 .5em;
+    }
+}
+
+.appearance__settings-form {
+    @include media(from tablet) {
+        padding: 0 1em;
+    }
+}
+
+.appearance__settings-row {
+    // flex-direction: column;
+
+    @include media(from tablet) {
+        flex-direction: row;
+    }
+}
+
+:root {
+    --color-prev-font-primary: #{$white};
+    --color-prev-font-secondary: #{$black};
+
+    --color-prev-primary: #{$purple-mountain};
+    --color-prev-primary-light: #{$periwinkle-grey};
+    --color-prev-primary-dark: #{$martinique};
+
+    --color-prev-secondary: #{$strikemaster};
+    --color-prev-secondary-light: #{$lily};
+    --color-prev-secondary-dark: #{$thunder};
+
+    --color-prev-highlight: #{$mineral-green};
+    --color-prev-highlight-light: #{$blue-smoke};
+    --color-prev-highlight-dark: #{$matterhorn};
+
+
+    --color-prev-menu: #{$lily};
+    --color-prev-menu-light: #{$maverick};
+    --color-prev-menu-dark: #{$venus};
+
+    --color-prev-inactive: #{$finlandia};
+    --color-prev-inactive-light: #{$edward};
+    --color-prev-inactive-dark: #{$cod-grey};
+
+    --color-prev-shortcut: #{$lily};
+    --color-prev-shortcut-outline: #{$periwinkle-grey};
+}
+
+
+.appearance__settings-indent {
+    padding: .25em .5em;
+
+    border: solid .15em;
+    border-top-color: var(--color-secondary-dark);
+    border-left-color: var(--color-secondary-dark);
+    border-bottom-color: var(--color-secondary-light);
+    border-right-color: var(--color-secondary-light);
+}
+
+.appearance__settings-heading {
+    margin: 0 auto;
+    color: var(--color-font-primary);
+}
+
+
+// buttons
+
+.appearance__color-btn {
+    background-color: var(--color-prev-primary);
+    padding: .25em .5em;
+    margin: 0 .5em;
+    width: 10em;
+    // font-size: .75em;
+
+
+    border: solid .15em;
+    border-top-color: var(--color-primary-light);
+    border-left-color: var(--color-primary-light);
+    border-bottom-color: var(--color-prev-primary-dark);
+    border-right-color: var(--color-prev-primary-dark);
+    outline: none;
+
+    &:active {
+        border-top-color: var(--color-primary-dark);
+        border-left-color: var(--color-primary-dark);
+        border-bottom-color: var(--color-prev-primary-light);
+        border-right-color: var(--color-prev-primary-light);
+    }
+
+    @include media(from tablet) {
+        font-size: 1em;
+    }
+}
+
+.appearance__font-primary-btn { 
+    background-color: var(--color-prev-primary);
+    color: var(--color-prev-font-primary);
+}
+.appearance__font-secondary-btn { 
+    background-color: var(--color-prev-primary);
+    color: var(--color-prev-font-secondary);
+}
+
+.appearance__primary-light-btn { background-color: var(--color-prev-primary-light); }
+.appearance__primary-base-btn { background-color: var(--color-prev-primary); }
+.appearance__primary-dark-btn { background-color: var(--color-prev-primary-dark); }
+
+.appearance__secondary-light-btn { background-color: var(--color-prev-secondary-light); }
+.appearance__secondary-base-btn { background-color: var(--color-prev-secondary); }
+.appearance__secondary-dark-btn { background-color: var(--color-prev-secondary-dark); }
+
+.appearance__menu-light-btn { background-color: var(--color-prev-menu-light); }
+.appearance__menu-base-btn { background-color: var(--color-prev-menu); }
+.appearance__menu-dark-btn { background-color: var(--color-prev-menu-dark); }
+
+.appearance__inactive-light-btn { background-color: var(--color-prev-inactive-light); }
+.appearance__inactive-base-btn { background-color: var(--color-prev-inactive); }
+.appearance__inactive-dark-btn { background-color: var(--color-prev-inactive-dark); }
+
+.appearance__highlight-light-btn { background-color: var(--color-prev-highlight-light); }
+.appearance__highlight-base-btn { background-color: var(--color-prev-highlight); }
+.appearance__highlight-dark-btn { background-color: var(--color-prev-highlight-dark); }

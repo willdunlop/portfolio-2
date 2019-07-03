@@ -1,0 +1,90 @@
+// Name your color variables with "Name that Color"
+// http://chir.ag/projects/name-that-color/
+
+$black:     #000000;
+$mineshaft: #333333;
+$white:     #ffffff;
+
+$deep-teal: #008080;
+$silver: #bfbfbf;
+$dark-silver: #c7c7c7;
+$grey: #808080;
+$emperor: #535353;
+$alto: #dbdbdb;
+$navy-blue: #00007f;
+
+
+// primary
+$purple-mountain: #8379bd; // Active Window 
+$periwinkle-grey: #c2c3e4;
+$martinique: #332D47;
+
+// secondary
+$strikemaster: #8b597b; // Window Interface
+$lily: #c8b0c0;
+$thunder: #34232e;
+
+//innactive
+$finlandia: #5A5D5A; //inactive
+$edward: #a9aaa9;
+$cod-grey: #1c1c1c;
+
+//menu
+
+$maverick: #d3c0cd;
+$venus: #a08d9a;
+//
+
+$mineral-green: #415d5a;
+$blue-smoke: #7a8e8c;
+$matterhorn: #4e413f;
+
+
+
+$au-chico: #8b505a;
+
+
+
+//  Theme
+
+:root {
+
+    --color-font-primary: #{$white};
+    --color-font-secondary: #{$black};
+
+    --color-primary: #{$purple-mountain};
+    --color-primary-light: #{$periwinkle-grey};
+    --color-primary-dark: #{$martinique};
+
+    // --color-primary-light: #{lighten($purple-mountain, 20%)};
+    // --color-primary-dark: #{darken($purple-mountain, 20%)};
+
+    --color-secondary: #{$strikemaster};
+    --color-secondary-light: #{$lily};
+    --color-secondary-dark: #{$thunder};
+
+    // --color-secondary-light: #{lighten($strikemaster, 30%)};
+    // --color-secondary-dark: #{darken($strikemaster, 30%)};
+
+    --color-highlight: #{$mineral-green};
+    --color-highlight-light: #{$blue-smoke};
+    --color-highlight-dark: #{$matterhorn};
+
+    --color-menu: #{$lily};
+    --color-menu-light: #{$maverick};
+    --color-menu-dark: #{$venus};
+
+    --color-inactive: #{$finlandia};
+    --color-inactive-light: #{$edward};
+    --color-inactive-dark: #{$cod-grey};
+
+    --color-shortcut: #{$lily};
+    --color-shortcut-outline: #{$periwinkle-grey};
+
+
+}
+
+$secondary: $strikemaster;
+$menu: $lily;
+$inactive: $finlandia;
+
