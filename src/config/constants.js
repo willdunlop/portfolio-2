@@ -1,10 +1,10 @@
 import dom, { Fragment } from 'jsx-render';
 
-
-import Authentication from '../app/authentication';
+import Professional from '../app/professional';
 import Personal from '../app/personal';
-import System from '../app/system';
+import Info from '../app/info';
 import IFrame from "../app/common/iFrame";
+import ProjectInfo from "../app/common/project-info";
 
 const constants = {
     developMode: false,
@@ -12,62 +12,130 @@ const constants = {
     // focusedWindow: '',
 
     toolchest: {
-        menuTypes: ['professional', 'personal', "system"]
+        menuTypes: ['professional', 'personal', "info"]
     },
 
     programs: {
         open: [],
         all: [{
-            title: "About",
-            slug: "about",
-            type: 'system',
-            icon: "/assets/images/notepad.png",
+            title: "Coming Soon",
+            slug: "coming-soon",
+            type: 'personal',
+            icon: "/assets/images/icons/about.png",
             settings: { isResizable: true },
             style: {
                 desktop: {
-                    size: { width: '500px', height: '300px' },
+                    size: { width: '800px', height: '700px' },
                     pos: { top: '100px', left: '200px' },
                 },
                 mobile: {
-                    size: { width: '200px', height: '200px' },
+                    size: { width: '100%', height: '100%' },
                     pos: { top: '0', left: '0' },
                 }
             },
-            // content: props => <Software.ActionShell {...props} />
-        },{
-            title: "Herbs of Gold",
-            slug: "herbs-of-gold",
-            type: 'professional',
-            icon: "/assets/images/herbs-of-gold.png",
+            // content: () => { return }
+        }, {
+            title: "About",
+            slug: "about",
+            type: 'info',
+            icon: "/assets/images/icons/about.png",
             settings: { isResizable: true },
             style: {
                 desktop: {
-                    size: { width: '90%', height: '100%' },
-                    pos: { top: '0', right: '0' },
+                    size: { width: '800px', height: '700px' },
+                    pos: { top: '100px', left: '200px' },
                 },
                 mobile: {
-                    size: { width: '200px', height: '200px' },
+                    size: { width: '100%', height: '100%' },
                     pos: { top: '0', left: '0' },
                 }
             },
-            content: () => <IFrame url="https://www.herbsofgold.com.au/" />
+            content: props => <Info.About {...props} />
         },{
+            title: "Welcome",
+            slug: "welcome",
+            type: 'info',
+            icon: "/assets/images/icon/welcome.png",
+            settings: { isResizable: true, dragOnly: true },
+            style: {
+                desktop: {
+                    size: { width: '500px', height: '250px' },
+                    pos: { top: '100px', left: '365px' },
+                },
+                mobile: {
+                    size: { width: '100%', height: '250px' },
+                    pos: { bottom: '50px', left: '0' },
+                }
+            },
+            content: props => <Info.Welcome {...props} />
+        },{
+            // title: "Herbs of Gold",
+            // slug: "herbs-of-gold",
+            // type: 'professional',
+            // icon: "/assets/images/herbs-of-gold.png",
+            // settings: { isResizable: true },
+            // style: {
+            //     desktop: {
+            //         size: { width: '90%', height: '100%' },
+            //         pos: { top: '0', right: '0' },
+            //     },
+            //     mobile: {
+            //         size: { width: '200px', height: '200px' },
+            //         pos: { top: '0', left: '0' },
+            //     }
+            // },
+            // content: () => <IFrame url="https://www.herbsofgold.com.au/" />
+        }, {
             title: "Blooms The Chemist",
             slug: "blooms-website",
             type: 'professional',
-            icon: "/assets/images/blooms.png",
+            icon: "/assets/images/projects/blooms-site/blooms.png",
             settings: { isResizable: true },
             style: {
                 desktop: {
-                    size: { width: '500px', height: '300px' },
-                    pos: { top: '100px', left: '200px' },
+                    size: { width: '800px', height: '640px' },
+                    pos: { top: '100px', left: '300px' },
                 },
                 mobile: {
-                    size: { width: '200px', height: '200px' },
+                    size: { width: '100%', height: '500px' },
+                    pos: { bottom: '0', left: '0' },
+                }
+            },
+            content: props => <Professional.BloomsSite {...props} />
+        }, {
+            title: "WebAR",
+            slug: "web-ar",
+            type: 'professional',
+            icon: "/assets/images/projects/web-ar/icon.png",
+            settings: { isResizable: true },
+            style: {
+                desktop: {
+                    size: { width: '693px', height: '900px' },
+                    pos: { top: '25px', right: '100px' },
+                },
+                mobile: {
+                    size: { width: '100%', height: '100%' },
                     pos: { top: '0', left: '0' },
                 }
             },
-            content: props => <IFrame {...props} />
+            content: props => <Professional.WebAR {...props} />
+        }, {
+            title: "Blackmores Mindful VR",
+            slug: "blackmores-mindful-vr",
+            type: 'professional',
+            icon: "/assets/images/projects/blackmores-mindful-vr/icon.png",
+            settings: { isResizable: true },
+            style: {
+                desktop: {
+                    size: { width: '800px', height: '673px' },
+                    pos: { bottom: '50px', right: '150px' },
+                },
+                mobile: {
+                    size: { width: '100%', height: '100%' },
+                    pos: { top: '0', left: '0' },
+                }
+            },
+            content: props => <Professional.BlackmoresMindfulVR {...props} />
         }, {
             title: "Window Stats",
             slug: "windowStats",
@@ -90,25 +158,15 @@ const constants = {
 
     desktop: {
         shortcuts:[{
-            title: "Test Shortcut",
-            icon: "/assets/images/computer.png",
-            programSlug: "shortcut",
+            title: "Welcome",
+            icon: "/assets/images/icons/welcome.png",
+            programSlug: "welcome",
             position: { top: '25px', right: '0' }
         }, {
-            title: "3D Demo",
-            icon: "/assets/images/programs.png",
-            programSlug: "3dDemo",
-            position: { top: '25px', right: '100px' }
-        }, {
-            title: "★ VaporMix #2 ★",
-            icon: "/assets/images/music.png",
-            programSlug: "vapormix2",
-            position: { top: '125px', right: '0' }
-        }, {
             title: "About",
-            icon: "/assets/images/notepad.png",
+            icon: "/assets/images/icons/about.png",
             programSlug: "about",
-            position: { top: '225px', right: '0' }
+            position: { top: '125px', right: '0' }
         }]
     },
     

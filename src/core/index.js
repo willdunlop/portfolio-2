@@ -90,7 +90,7 @@ class Core {
         /** direct the renderer and UI elements to the container element */
         const container = document.getElementById('container');
         container.appendChild(this.renderer.domElement);
-        container.appendChild(this.stats.dom);
+        // container.appendChild(this.stats.dom);
         // console.log(this.controls.target)
         // this.camera.lookAt(this.controls.target);
 

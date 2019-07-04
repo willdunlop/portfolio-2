@@ -207,7 +207,7 @@ class Window {
         const jsx =
             <div ref={elm => this.windowElem = elm} id={this.windowId} className="window animated zoomIn" tabindex="1">
                 <div id="dragHeader" className="window__header">
-                    <button ref={elm => this.closeButton = elm} className="window__header-btn">-</button>
+                    <button ref={elm => this.closeButton = elm} className="window__header-btn">x</button>
                     <div id="windowBanner" className="window__header-title">{this.props.program.title}</div>
                     <button ref={elm => this.minButton = elm} className="window__header-btn">.</button>
                     <button ref={elm => this.maxButton = elm} className="window__header-btn">O</button>

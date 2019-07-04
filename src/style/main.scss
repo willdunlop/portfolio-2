@@ -87,6 +87,8 @@
 // common components
 @import "components/common/title-collapser";
 @import "components/common/iframe";
+@import "components/common/carousel";
+@import "components/common/project-info";
 
 
 // auth
@@ -102,8 +104,8 @@
 @import "components/interface/tray";
 
 // software components
-@import "components/software/code-viewer";
-@import "components/software/actionshell";
+@import "components/software/welcome";
+@import "components/software/about";
 @import "components/software/window-stats";
 
 

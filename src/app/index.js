@@ -10,8 +10,6 @@ import constants from '../config/constants';
 import helpers from '../config/helpers';
 
 
-
-
 class App {
     constructor() {
 
@@ -64,9 +62,10 @@ class App {
     }
 
     initStartupSoftware() {
-        // const actionShell = helpers.getProgram("actionshell");
         const windowStats = helpers.getProgram("windowStats");
-        this.openWindow(windowStats)
+        const welcome = helpers.getProgram("welcome");
+        // this.openWindow(windowStats);
+        this.openWindow(welcome);
     }
 
 
@@ -80,7 +79,7 @@ class App {
        
         this.populateDesktop();
 
-        // this.initStartupSoftware()
+        this.initStartupSoftware()
     
         return jsx
     }
